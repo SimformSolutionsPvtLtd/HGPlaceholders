@@ -232,11 +232,6 @@ open class TableView: UITableView {
      If the number of rows == 0 it shows no results placeholder
      */
     open override func reloadData() {
-        // if the tableview is empty we switch automatically to no data placeholder
-        if numberOfRowsInAllSections() == 0 {
-            showLoadingPlaceholder()
-            return
-        }
         // if the data source is in no data placeholder, and the user tries to reload data, we will switch automatically to default
         if dataSource is PlaceholderDataSourceDelegate {
             showDefault()
@@ -245,6 +240,9 @@ open class TableView: UITableView {
         super.reloadData()
     }
     
+    open func reload() {
+        super.reloadData()
+    }
     /**
      Called when the adjusted content insets of the scroll view change.
      */

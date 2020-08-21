@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// The Placeholder object, is used to create placeholders
-public struct Placeholder {
+public class Placeholder: NSObject {
     
     /// The data of the placeholer
     public var data: PlaceholderData?
@@ -44,8 +44,10 @@ public struct Placeholder {
     /// - Parameters:
     ///   - cellIdentifier: The identifier of the cell to use as a placeholder
     ///   - key: the unique key of the placeholder
-    public init(cellIdentifier: String, key: PlaceholderKey) {
+    public init(cellIdentifier: String, key: PlaceholderKey, data: PlaceholderData, style: PlaceholderStyle? = nil) {
+        self.data = data
         self.key = key
         self.cellIdentifier = cellIdentifier
+        self.style = style
     }
 }

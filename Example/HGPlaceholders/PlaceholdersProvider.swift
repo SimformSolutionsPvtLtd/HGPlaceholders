@@ -15,7 +15,7 @@ extension PlaceholdersProvider {
         commonStyle.actionBackgroundColor = .black
         commonStyle.actionTitleColor = .white
         commonStyle.titleColor = .black
-        commonStyle.isAnimated = false
+        commonStyle.isAnimated = true
         
         commonStyle.titleFont = UIFont(name: "AvenirNextCondensed-HeavyItalic", size: 19)!
         commonStyle.subtitleFont = UIFont(name: "AvenirNextCondensed-Italic", size: 19)!
@@ -43,7 +43,12 @@ extension PlaceholdersProvider {
         
         let placeholdersProvider = PlaceholdersProvider(loading: loading, error: error, noResults: noResults, noConnection: noConnection)
         
-        let xibPlaceholder = Placeholder(cellIdentifier: "CustomPlaceholderCell", key: PlaceholderKey.custom(key: "XIB"))
+        var xibData = PlaceholderData()
+        xibData.title = "This is a xib title, \n It is awsome\""
+        xibData.subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        xibData.image = #imageLiteral(resourceName: "list")
+        xibData.action = "Ok"
+        let xibPlaceholder = Placeholder(cellIdentifier: "CustomPlaceholderCell", key: PlaceholderKey.custom(key: "XIB"), data: xibData)
         
         placeholdersProvider.add(placeholders: PlaceholdersProvider.starWarsPlaceholder, xibPlaceholder)
         

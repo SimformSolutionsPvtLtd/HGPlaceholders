@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		078B3A00236AA8566A1BDE71 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		089FFFAA5455B1FAC176F3A6 /* Pods-HGPlaceholders_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGPlaceholders_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HGPlaceholders_Tests/Pods-HGPlaceholders_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0913B562CE0DD4319C2FEC31 /* HGPlaceholders.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HGPlaceholders.podspec; path = ../HGPlaceholders.podspec; sourceTree = "<group>"; };
+		0913B562CE0DD4319C2FEC31 /* HGPlaceholders.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HGPlaceholders.podspec; path = ../HGPlaceholders.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		576F9853BBED6C018D85C27A /* Pods-HGPlaceholders_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HGPlaceholders_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HGPlaceholders_Example/Pods-HGPlaceholders_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HGPlaceholders_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGPlaceholders_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* HGPlaceholders_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HGPlaceholders_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,6 +280,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

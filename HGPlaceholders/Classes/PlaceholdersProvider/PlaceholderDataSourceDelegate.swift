@@ -161,7 +161,7 @@ extension PlaceholderDataSourceDelegate: UITableViewDelegate {
     // animate the cell
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
-        if placeholder.style?.isAnimated == false {
+        if placeholder.style == nil || placeholder.style?.isAnimated == false {
             return
         }
         

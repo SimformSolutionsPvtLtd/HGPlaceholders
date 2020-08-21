@@ -188,6 +188,10 @@ open class CollectionView: UICollectionView {
         }
         super.reloadData()
     }
+    
+    open func reload() {
+        super.reloadData()
+    }
 }
 
 extension UICollectionView {
