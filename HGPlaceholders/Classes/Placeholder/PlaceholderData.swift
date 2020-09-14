@@ -64,7 +64,7 @@ public struct PlaceholderData {
         var errorStyle = PlaceholderData()
         errorStyle.image = PlaceholdersProvider.image(named: "hg_default-error")
         errorStyle.title = NSLocalizedString("Whoops!", comment: "")
-        errorStyle.subtitle = NSLocalizedString("We tried, but something went\nteriblly wrong", comment: "")
+        errorStyle.subtitle = NSLocalizedString("We tried, but something went\nterribly wrong", comment: "")
         errorStyle.action = NSLocalizedString("Try Again!", comment: "")
         
         return errorStyle
